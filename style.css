@@ -304,6 +304,7 @@ a {
 
 .new-container {
   max-width: 1920px;
+  margin: auto;
   height: 800px;
   background: #ffffff;
   display: flex;
@@ -364,6 +365,7 @@ a {
 
 .read {
   max-width: 1920px;
+  margin: auto;
   height: 974px;
   background-color: #131313;
   display: flex;
@@ -469,6 +471,7 @@ a {
 
 .benefits {
   max-width: 1920px;
+  margin: auto;
   height: 387px;
   background: #ffffff;
   display: flex;
@@ -524,6 +527,7 @@ a {
 
 .stay-container {
   max-width: 1920px;
+  margin: auto;
   height: 387px;
   background-color: #ecb235;
   display: flex;
