@@ -2,7 +2,7 @@
 ### Ahoj!
 
 Právě jsem téměř dokončila práci na tomto projektu v rámci testovacího úkolu pro MirandaMedia. Níže popisuji, jak jsem na něm pracovala a co bylo realizováno.
-
+**URL:** [Live-site](https://lesyast.github.io/Miranda-Media-DemoDay/)
 ## Grafický návrh
 Projekt vychází ze staršího návrhu hlavní stránky jednoduchého e-shopu s investičními kovy. Návrh byl poskytnut ve Figmě.
 
