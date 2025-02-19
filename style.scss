@@ -82,6 +82,7 @@ a {
 .search-input,
 .search-btn {
   border: none;
+  background: none;
   font-size: 14px;
 }
 
@@ -143,7 +144,7 @@ a {
 
 /* HERO */
 .hero-container {
-  background: url(/assets/img/logo-desktop.jpeg) center/cover no-repeat;
+  background: url('./assets/img/logo-desktop.jpeg') center/cover no-repeat;
   width: 1920px;
   height: 1107px;
   display: flex;
@@ -226,13 +227,13 @@ a {
   }
 
   .item-1 {
-    background-image: url(/assets/img/29d398920922e5ddfe2ffdb1cc4c6666.png);
+    background-image: url('./assets/img/29d398920922e5ddfe2ffdb1cc4c6666.png');
   }
   .item-2 {
-    background-image: url(/assets/img/6ffdfd1d12eba89da8e25046d21c03a2.jpeg);
+    background-image: url('./assets/img/6ffdfd1d12eba89da8e25046d21c03a2.jpeg');
   }
   .item-3 {
-    background-image: url(/assets/img/fe663af2ebb36e85671217e3fa979d5e.jpeg);
+    background-image: url('./assets/img/fe663af2ebb36e85671217e3fa979d5e.jpeg');
   }
 
   .proposal-btn {
@@ -300,19 +301,19 @@ a {
   }
 
   .item-4 {
-    background-image: url(/assets/img/d5bc8aec07393fab4f8e21ffa57a0c1c.jpeg);
+    background-image: url('./assets/img/d5bc8aec07393fab4f8e21ffa57a0c1c.jpeg');
     background-size: cover;
   }
   .item-5 {
-    background-image: url(/assets/img/6ffdfd1d12eba89da8e25046d21c03a2.jpeg);
+    background-image: url('./assets/img/6ffdfd1d12eba89da8e25046d21c03a2.jpeg');
     background-size: cover;
   }
   .item-6 {
-    background-image: url(/assets/img/fe663af2ebb36e85671217e3fa979d5e.jpeg);
+    background-image: url('./assets/img/fe663af2ebb36e85671217e3fa979d5e.jpeg');
     background-size: 300%;
   }
   .item-7 {
-    background-image: url(/assets/img/bc2d7c55a4d85ff81acdb0ee0e15f547.jpeg);
+    background-image: url('./assets/img/bc2d7c55a4d85ff81acdb0ee0e15f547.jpeg');
     background-size: cover;
   }
 
@@ -453,20 +454,20 @@ a {
     }
 
     .lorem1 {
-      @include read-bg("/assets/img/read-1.jpeg");
+      @include read-bg("./assets/img/read-1.jpeg");
     }
     .lorem2 {
-      @include read-bg("/assets/img/read-2.jpeg");
+      @include read-bg("./assets/img/read-2.jpeg");
     }
     .lorem3 {
-      @include read-bg("/assets/img/read-3.jpeg");
+      @include read-bg("./assets/img/read-3.jpeg");
     }
     .lorem4 {
-      @include read-bg("/assets/img/read-4.jpeg");
+      @include read-bg("./assets/img/read-4.jpeg");
     }
 
     .lorem5 {
-      @include read-bg("/assets/img/read-5.jpeg");
+      @include read-bg("./assets/img/read-5.jpeg");
       grid-row: 2;
       grid-column: 2 / span 2;
       background-repeat: no-repeat;
