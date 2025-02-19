@@ -1,10 +1,468 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
-	</head>
-	<body></body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="/" class="logo">
+        LOGO
+      </a>
+
+      <nav class="header-nav">
+        <ul class="header-ul">
+          <li class="dropdown">
+            <a href="#">
+				Producty
+				<i class="fa-solid fa-angle-down"></i>
+			</a>
+            <ul class="dropdown-menu" id="dropdown">
+				<li>
+					<a href="#">Zlate slitky</a>
+				</li>
+				<li>
+					<a href="#">Stribrne slitky</a>
+				</li>
+				<li>
+					<a href="#">Platynove slitky</a>
+				</li>
+				<li>
+					<a href="#">Investing slitky</a>
+				</li>
+			</ul>
+          </li>
+          <li>
+            <a href="">Akční nabidka</a>
+          </li>
+          <li>
+            <a href="">O nás</a>
+          </li>
+          <li>
+            <a href="">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+
+      <form class="search-container">
+        <input
+		class="search-input"
+          type="text"
+          id="search-input"
+          placeholder="Napište, co hledáte"
+          onkeyup="performSearch()"
+        />
+        <button type="submit" class="search-btn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+      <form id="currency-form">
+		<label for="currency-select" id="currency-label">CZK <i class="fa-solid fa-angle-down"></i></label>
+		<select id="currency-select">
+			<option value="USD">USD</option>
+			<option value="EUR">EUR</option>
+			<option value="BTC">BTC</option>
+			<option value="CZK" selected>CZK</option>
+		</select>
+	</form>
+	
+
+      <div class="cart">
+        <button class="cart-btn">Košík</button>
+        <span class="cart-badge" id="cart-count">0</span>
+
+        <button class="account-btn"><i class="fa-regular fa-circle-user"></i></button>
+      </div>
+    </header>
+    <!-- main -->
+    <main>
+      <!-- HERO -->
+      <section class="hero-container">
+        <div class="hero-content">
+          <header class="hero-header">
+            <p class="hero-text">Lorem ipsum dolor sit.</p>
+            <h1 class="hero-title">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </h1>
+          </header>
+          <button class="hero-btn">
+            <a href="#" class="hero-btn">Zobrazit</a>
+          </button>
+        </div>
+      </section>
+      <!-- PROPOSAL -->
+      <section class="proposal-container">
+        <div class="proposal-item item-1">
+          <div class="proposal-content">
+            <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+            <a href="#" class="proposal-btn">Nakupuj</a>
+          </div>
+        </div>
+
+        <div class="proposal-item item-2">
+          <div class="proposal-content">
+            <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+            <a href="#" class="proposal-btn">Nakupuj</a>
+          </div>
+        </div>
+
+        <div class="proposal-item item-3">
+          <div class="proposal-content">
+            <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+            <a href="#" class="proposal-btn">Nakupuj</a>
+          </div>
+        </div>
+      </section>
+<!-- CHOOSE CONTAINER -->
+      <section class="choose-container">
+        <h2 class="choose-title">Vyberte si z naši nabídky</h2>
+        <div class="choose-content">
+          <div class="choose-item item-4">
+			
+			<a href="" class="choose-type">Investicni</a>
+			<a href="" class="choose-clearly">Zlate mince</a>
+		
+		  </div>
+          <div class="choose-item item-5">
+			
+			<a href="" class="choose-type">Investicni</a>
+			<a href="" class="choose-clearly">Zlate slitky</a>
+			
+		  </div>
+          <div class="choose-item item-6">
+			<a href="" class="choose-type">Historicke</a>
+			<a href="" class="choose-clearly">Zlate mince</a>
+		  </div>
+          <div class="choose-item item-7">
+			
+			<a href="" class="choose-type">Pametni</a>
+			<a href="" class="choose-clearly">Zlate mince CNB</a>
+		
+		  </div>
+        </div>
+        <div class="choose-btn">
+          <a href="" class="choose-type">Zobrazit vice</a>
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </section>
+
+	  <!-- NOVINKY -->
+
+	  <section class="new-container">
+		<nav class="new-filters">
+			<a href="#" class="news active">Novinky</a>
+			<a href="#" class="popular">Nejprodávanější</a>
+			<a href="#" class="recommend">Doporučené</a>
+		</nav>
+	
+		<div class="new-items">
+			<article class="new-item">
+				<div class="new-labels">
+					<span class="new-green">Novinka</span>
+					<span class="new-red">Vyprodej</span>
+				</div>
+				<img src="/assets/img/produkt1.jpg" alt="Zlatá investiční mince">
+				<div class="new-info">
+					<h3>Zlatá investiční mince American Eagle 1/2 Oz ND</h3>
+					<p class="stock">Skladem</p>
+				</div>
+				<div class="new-price">
+					<h3>43 852 CZK</h3>
+					<button class="add-to-cart">
+						<i class="fa-solid fa-cart-shopping"></i>
+					</button>
+				</div>
+			</article>
+	
+			<article class="new-item">
+				<div class="new-labels">
+					<span class="new-green">Novinka</span>
+					<span class="new-red">Vyprodej</span>
+				</div>
+				<img src="/assets/img/produkt2.jpg" alt="500g investiční stříbrný slitek Heraeus">
+				<div class="new-info">
+					<h3>500g investiční stříbrný slitek Heraeus</h3>
+					<p class="stock">Skladem</p>
+				</div>
+				<div class="new-price">
+					<h3>43 852 CZK</h3>
+					<button class="add-to-cart">
+						<i class="fa-solid fa-cart-shopping"></i>
+					</button>
+				</div>
+			</article>
+	
+			<article class="new-item">
+				<div class="new-labels">
+					<span class="new-green">Novinka</span>
+					<span class="new-red">Vyprodej</span>
+				</div>
+				<img src="/assets/img/product3.jpg" alt="Stříbrná investiční mince Rok Tygra Lunar III 1 Oz 2022">
+				<div class="new-info">
+					<h3>Stříbrná investiční mince Rok Tygra Lunar III 1 Oz 2022</h3>
+					<p class="stock order">Na objednavku</p>
+				</div>
+				<div class="new-price">
+					<h3>43 852 CZK</h3>
+					<button class="add-to-cart">
+						<i class="fa-solid fa-cart-shopping"></i>
+					</button>
+				</div>
+			</article>
+	
+			<article class="new-item">
+				<div class="new-labels">
+					<span class="new-green">Novinka</span>
+					<span class="new-red">Vyprodej</span>
+				</div>
+				<img src="/assets/img/produkt4.jpg" alt="10 x 1g investiční zlatý slitek Argor Heraeus SA">
+				<div class="new-info">
+					<h3>10 x 1g investiční zlatý slitek Argor Heraeus SA</h3>
+					<p class="stock unavailable">Momentalne nedostupne</p>
+				</div>
+				<div class="new-price">
+					<h3>43 852 CZK</h3>
+					<button class="add-to-cart">
+						<i class="fa-solid fa-cart-shopping"></i>
+					</button>
+				</div>
+			</article>
+		</div>
+	</section>
+	<!-- READ -->
+
+	<section class="read">
+		<h1 class="read-header">Přečtěte si z našeho blogu</h1>
+		<div class="grid-container">
+			<article class="lorem1">
+				<time datetime="2021-12-20">20.12.2021</time>
+				<h2 class="read-title"><a href="#">Lorem ipsum</a></h2>
+				<div class="author">
+					<i class="fa-regular fa-circle-user"></i>
+					<a href="author-profile.html">Lukas</a> | 
+					<a href="comments.html">0 comments</a>
+				</div>
+			</article>
+	
+			<article class="lorem2">
+				<time datetime="2021-12-20">20.12.2021</time>
+				<h2 class="read-title"><a href="#">Lorem ipsum</a></h2>
+				<div class="author">
+					<i class="fa-regular fa-circle-user"></i>
+					<a href="author-profile.html">Lukas</a> | 
+					<a href="comments.html">0 comments</a>
+				</div>
+			</article>
+	
+			<article class="lorem3">
+				<time datetime="2021-12-20">20.12.2021</time>
+				<h2 class="read-title"><a href="#">Lorem ipsum</a></h2>
+				<div class="author">
+					<i class="fa-regular fa-circle-user"></i>
+					<a href="author-profile.html">Lukas</a> | 
+					<a href="comments.html">0 comments</a>
+				</div>
+			</article>
+	
+			<article class="lorem4">
+				<time datetime="2021-12-20">20.12.2021</time>
+				<h2 class="read-title"><a href="#">Lorem ipsum</a></h2>
+				<div class="author">
+					<i class="fa-regular fa-circle-user"></i>
+					<a href="author-profile.html">Lukas</a> | 
+					<a href="comments.html">0 comments</a>
+				</div>
+			</article>
+	
+			<article class="lorem5">
+				<time datetime="2021-12-20">20.12.2021</time>
+				<h2 class="read-title"><a href="#">Lorem ipsum</a></h2>
+				<div class="author">
+					<i class="fa-regular fa-circle-user"></i>
+					<a href="author-profile.html">Lukas</a> | 
+					<a href="comments.html">0 comments</a>
+				</div>
+			</article>
+		</div>
+
+		<div class="read-more">
+			<a href="">Zobrazit více</a>
+			<i class="fa-solid fa-arrow-right"></i>
+		</div>
+	</section>
+	
+	<!-- benefits -->
+
+	<section class="benefits">
+		<div class="benefit-content">
+<div class="benefit-item">
+	<img src="/assets/img/delivery.png" alt="">
+	<p class="benefit-text">
+		Doprava zdarma <br> na vše od 5 000 Kč
+	</p>
+</div>
+<div class="benefit-item">
+	<img src="/assets/img/finance.png" alt="">
+	<p class="benefit-text">
+		Okamžitá fixace cen <br> do 150 000 Kč
+	</p>
+</div>
+<div class="benefit-item">
+	<img src="/assets/img/qr-code.png" alt="">
+	<p class="benefit-text">
+		Možnost platby <br> pomocí QR kódu
+	</p>
+</div>
+<div class="benefit-item">
+	<div class="border-muzeum">
+	<img src="/assets/img/muzeum.png" alt="">
+    </div>
+	<p class="benefit-text">
+		Vykupujeme historické <br> i novodobé mince
+	</p>
+</div>
+</div>
+	</section>
+	<!-- stay with us -->
+
+	<section class="stay-container">
+		<div class="svg-icon">
+			<i class="fa-regular fa-comment-dots"></i>
+		</div>
+<form action="" class="contact-form">
+	<fieldset class="contact-field" >
+		<legend class="stay-header">
+			Zůstaňtě s námi v kontaktu
+		</legend>
+		<div class="input-div">
+	<label for="email" class="sr-only">E-mail</label>
+	<input id="email" class="input-contact" type="email" placeholder="@Zadej svuj email">	
+<button class="contact-button" type="submit" aria-label="Odeslat e-mail">
+	Odoslať
+	<i class="fa-solid fa-arrow-right"></i>
+</button>
+</div>
+</fieldset>
+</form>
+	</section>
+    </main>
+    <!-- footer -->
+    <footer>	
+<section class="footer-container">
+	<div class="footer-logo"></div>
+	<section class="footer-nav">
+<div class="how-buy">
+<h2>Jak nakoupit</h2>
+<nav>
+	<ul>
+		<li>
+			<a href="">Platebni podminky</a>
+		</li>
+		<li>
+			<a href="">Fixacni podminky</a>
+		</li>
+		<li>
+			<a href="">Dodaci a skladovaci podminky</a>
+		</li>
+		<li>
+			<a href="">Obchodni podminky</a>
+		</li>
+		<li>
+			<a href="">Ochrana osobnich udaju</a>
+		</li>
+		<li>
+			<a href="">Reklamace</a>
+		</li>
+	</ul>	
+</nav>
+</div>
+<div class="order">
+	<h2>
+		Vase objednavky
+	</h2>
+	<nav>
+		<ul>
+			<li>
+				<a href="">Stav objednavky</a>
+			</li>
+			<li>
+				<a href="">Stav poštovní zásilky</a>
+			</li>
+			<li>
+				<a href="">Přehled služeb a benefitů</a>
+			</li>
+			<li>
+				<a href="">Výkupní podmínky</a>
+			</li>
+			<li>
+				<a href="">Nejčastější dotazy</a>
+			</li>
+			<li>
+				<a href="">Grafy investičních kovů</a>
+			</li>
+		</ul>
+	</nav>
+</div>
+<div class="about-us">
+	<h2>
+		O společnosti
+	</h2>
+	<nav>
+		<ul>
+			<li>
+				<a href="">Základní informace</a>
+			</li>
+			<li>
+				<a href="">Pobočky</a>
+			</li>
+			<li>
+				<a href="">Kontakty</a>
+			</li>
+			<li>
+				<a href="">Partneři</a>
+			</li>
+			<li>
+				<a href="">Blog</a>
+			</li>
+			<li>
+				<a href=""> Kariéra</a>
+			</li>
+		</ul>
+	</nav>
+</div>
+
+<section class="contact">
+	<h2>
+		Kontakt
+	</h2>
+	<div class="social">
+<img src="/assets/img/Group 41.png" alt="">
+<img src="/assets/img/facebook.png" alt="">
+	</div>
+	<address class="contact-info">
+		<div class="contact-item">
+			<img src="/assets/img/phone.png" alt="">
+			<h2><a href="tel:+421919163181">+421 919 163 181</a></h2>
+		</div>
+		<div class="contact-item">
+			<i class="fa-regular fa-envelope"></i>
+			<h2><a href="mailto:info@constantinvest.com">info@constantinvest.com</a></h2>
+		</div>
+	</address>
+	
+</section>
+
+</section>
+</section>
+	</footer>
+    <script src="script.js"></script>
+  </body>
 </html>
+  
