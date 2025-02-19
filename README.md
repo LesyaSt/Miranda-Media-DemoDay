@@ -1,50 +1,50 @@
-# DEMODay MirandaMedia
+ # DEMODay MirandaMedia
+### Ahoj!
 
-Vítám Tě u zkušebního zadání pro přijímací pohovor k nám do Mirandy!
-
-Níže nalezneš veškeré potřebné informace. Neváhej, pokud nebudeš vědět kudy kam, použít rady a nápady strýčka Googla, ale klidně i některého ze zkušenějších potenciálních kolegů. Určitě Ti rádi ukážou tu správnou cestu, nejsme přeci ve škole. Důležité je problém aktivně vyřešit, nikoliv zatajit nebo obejít. Nikdo z nás nikdy nebude umět všechno a i seniorní vývojáři řešení hledají.
+Právě jsem téměř dokončila práci na tomto projektu v rámci testovacího úkolu pro MirandaMedia. Níže popisuji, jak jsem na něm pracovala a co bylo realizováno.
 
 ## Grafický návrh
+Projekt vychází ze staršího návrhu hlavní stránky jednoduchého e-shopu s investičními kovy. Návrh byl poskytnut ve Figmě.
 
-Grafický návrh je část staršího projektu, konkrétně pouze Homepage jednoduchého e-shopu, zabývajícího se prodejem investičních kovů.
+## Použité technologie
+V souladu s požadavky jsem pracovala pouze s čistým HTML, CSS a JavaScriptem, bez použití frameworků nebo knihoven jako jQuery či Bootstrap. K usnadnění práce se styly jsem využila CSS preprocesor (SCSS).
 
-URL: [Figma.com](https://www.figma.com/file/mNSNesuEHkSvwnZHsBwLxt/DemoDay?node-id=0%3A1)
+## Co jsem implementovala:
+✅ Responzivní design
 
-## Technologie
+Stránka je plně responzivní a přizpůsobena různým velikostem obrazovek.
+Návrh obsahoval pouze mobilní a desktopovou verzi, takže jsem sama optimalizovala zobrazení pro mezilehlé velikosti.
 
-K realizaci zadání prosím nepoužívej žádné frameworky ani knihovny. Nepotřebuješ ani jQuery, Bootstrap ani nic jim podobného. Používej HTML, CSS a čistý (nebo také Vanilla) JavaScript. Pokud jsi zvyklý na CSS preprocesor, jeho použití je samozřejmě vítáno.
+✅ Dynamické načítání produktů pomocí JavaScriptu
 
-## Zadání
+Produkty jsou načítány ze souboru products.json pomocí fetch.
+Soubor obsahoval chyby, které jsem opravila pomocí validátoru JSON.
+Pro vytvoření produktů a jejich vkládání na stránku jsem využila createElement a appendChild.
 
-Naklonuj si tento repozitář k sobě do PC. V repozitáři máš připravené uplně základní HTML, adresářovou strukturu a zdrojová data pro produkty. Vytvoř si CSS / SCSS / LESS a JavaScript a nalinkuj si je do připraveného HTML.
+✅ Filtrování produktů podle kategorií
 
-1. Stránka musí být plně responsivní, grafický návrh obsahuje pouze mobilní a desktopovou verzi, u ostatních velikostí displayů si musíš poradit dle svého nejlepšího vědomí a svědomí.
-2. Zajisti, aby všechny aktivní prvky na stránce měly příslušný hover efekt. Pokud není v návrhu naznačený, vymysli si svůj.
-3. Nemusíš vytvářet žádné další podstránky, ale dbej na to, aby odkaz byl odkazem a tlačítko tlačítkem.
-4. Na stránce je sekce s produkty. Data pro tyto produkty najdeš v souboru /assets/src/products.json.
-    - Načti tento soubor, a pomocí JavaScriptu vytvoř kompletní elementy produktů a vlož je do stránky.
-        - HINT: Pro načtení ze souboru použij "fetch"
-        - HINT: JSON obsahuje chyby, použij validátor, chyby najdi a odstraň
-        - HINT: Pro vytvoření elementu se používá "createElement", pro vložení do stránky například "appendChild" nebo "insertBefore"
-    - Blok s produkty má 3 záložky, každý produkt v JSONu má uvedenou konkrétní kategorii.
-    - Pomocí JavaScriptu zajisti, aby mezi jednotlivými záložkami šlo přepínat.
-        - HINT: K tomuto budeš určitě potřebovat "addEventListener"
-    - Pro každou záložku obsahuje soubor 8 produktů, defaultně zobrazuj pouze 4 a po kliknutí na tlačíko "Zobrazit více produktů" zobraz všechny
-    - Pokud se na řešení pomocí JavaScriptu necítíš, vytvoř kód přímo v HTML
-        - HINT: Věř ale, že tato část pomocí JavaScriptu je pro nás nesmírně důležitá a přinese ti velkou spoustu plusových bodů
-5. Stránka obsahuje i formuláře. Zajisti, aby formuláře byly sémanticky správně, akci pro ně samozřejmě vytvářet nemusíš.
-6. Hned pod hlavičkou je "Carousel", ten můžeš ponechat statický a pouze pokud ti zbyde nějaký čas, můžeš ho rozpohybovat.
-    - HINT: Pro tohle můžeš použít JS knihovnu, nám se osvědčil například Swiper.
-7. Fonty můžeš použít z CDN fonts.google.com, ale pokud je zvládneš stáhnout a importovat z lokálního disku, jsou to opět body navíc.
+Produkty jsou rozděleny do 3 kategorií, mezi kterými lze přepínat pomocí JavaScriptu (addEventListener).
+Ve výchozím stavu se zobrazují 4 produkty, zbývající se načtou po kliknutí na tlačítko "Zobrazit více".
 
-## Zpracování
+✅ Hover efekty
 
-Na zpracování zadání máš primárně jeden den, který budeš trávit osobně u nás v Mirandě. Pokud vše stihneš, opět ti to přinese spoustu plusových bodů do hodnocení. Pokud to nestihneš, ale i přesto budeš mít chuť celé zadání dokončit, určitě se nějak domluvíme a můžeš zadání dokončit doma a poté zaslat, nikdo ti hlavu neutrhne.
+Přidala jsem :hover efekty pro aktivní prvky stránky (tlačítka, odkazy).
+Pokud efekt nebyl specifikován v návrhu, vytvořila jsem vlastní variantu.
 
-Buď důsledný. Prioritní je vzhledová stránka. Nedovol, aby se ti při jakémkoliv rozlišení překrývaly elementy nebo třeba "utíkaly" ze stránky. Preciznost a pixel perfect design je pro nás alfa-omega.
+✅ Formuláře
 
-Snaž se psát čitý, přehledný a vizuálně hezký kód, využívej DRY princip. Nebudeš jediný, kdo ho bude číst.
+Zajistila jsem správnou sémantiku a strukturu formulářů (label, input).
 
-## Závěr
+✅ Carousel (karusel)
 
-Závěrem Ti pouze popřeji hodně štěstí, a těším se na další spolupráci!
+Hlavní funkcionalita stránky funguje i bez něj, ale přidala jsem jej pro lepší uživatelský zážitek.
+Použila jsem knihovnu Swiper.js, jak bylo doporučeno.
+
+✅ Fonty
+
+Použila jsem Google Fonts CDN, ale také jsem otestovala lokální načtení fontů.
+
+# Závěr
+Projekt je téměř hotový a splňuje všechny požadavky. Kód je čistý, přehledný a psaný dle principu DRY.
+
+Jsem ráda, že jsem měla možnost na tomto úkolu pracovat a těším se na zpětnou vazbu! 🚀
