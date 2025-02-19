@@ -17,8 +17,8 @@ $logogrey: #e9e9e9;
 
 @font-face {
   font-family: "Montserrat";
-  src: url(/assets/fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf),
-    url(/assets/fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf);
+  src: url('./assets/fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf'),
+    url('./assets/fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf');
   font-weight: 500;
   font-style: normal;
 }
@@ -38,10 +38,10 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1920px;
+  max-width: 1920px;
   height: 122px;
   padding: 30px 240px;
-  margin: 0 auto;
+  margin: auto;
 
   .logo {
     background-color: $logogrey;
@@ -145,13 +145,13 @@ a {
 /* HERO */
 .hero-container {
   background: url('./assets/img/logo-desktop.jpeg') center/cover no-repeat;
-  width: 1920px;
+  max-width: 1920px;
   height: 1107px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .hero-content {
@@ -192,7 +192,8 @@ a {
 }
 // proposal
 .proposal-container {
-  width: 1920px;
+  max-width: 1920px;
+  margin: auto;
   height: 565px;
   background: $white;
   display: flex;
@@ -247,7 +248,8 @@ a {
 }
 
 .choose-container {
-  width: 1920px;
+  max-width: 1920px;
+  margin: auto;
   height: 629px;
   background: $bg-choose;
   display: flex;
@@ -331,7 +333,7 @@ a {
 }
 
 .new-container {
-  width: 1920px;
+  max-width: 1920px;
   height: 800px;
   background: $white;
   display: flex;
@@ -399,7 +401,7 @@ a {
 }
 
 .read {
-  width: 1920px;
+  max-width: 1920px;
   height: 974px;
   background-color: $bg-choose;
   display: flex;
@@ -516,7 +518,7 @@ a {
   }
 }
 .benefits {
-  width: 1920px;
+  max-width: 1920px;
   height: 387px;
   background: $white;
   display: flex;
@@ -578,7 +580,7 @@ a {
 }
 
 .stay-container {
-  width: 1920px;
+  max-width: 1920px;
   height: 387px;
   background-color: $choose-btn;
   display: flex;
@@ -652,7 +654,8 @@ a {
   }
 }
 .footer-container {
-  width: 1920px;
+  max-width: 1920px;
+  margin: auto;
   height: 734px;
   background-color: $bg-choose;
   padding: 100px;
