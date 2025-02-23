@@ -1,11 +1,11 @@
-
 document.addEventListener("DOMContentLoaded", function () {
-    let dropdown = document.querySelector(".dropdown"); // Отримуємо <li> з класом "dropdown"
-    let dropdownMenu = document.querySelector(".dropdown-menu"); // Отримуємо <ul> меню
+    let dropdown = document.querySelector(".dropdown");
+    let dropdownIcon = dropdown.querySelector(".fa-angle-down"); // Отримуємо стрілку
+    let dropdownMenu = dropdown.querySelector(".dropdown-menu"); // Отримуємо меню
 
-    dropdown.addEventListener("click", function (event) {
-        event.preventDefault(); // Запобігає стандартній дії <a>
-        dropdownMenu.classList.toggle("show"); // Додає/забирає клас для відображення меню
+    dropdownIcon.addEventListener("click", function (event) {
+        event.stopPropagation(); // Запобігає закриттю при кліку на саму іконку
+        dropdownMenu.classList.toggle("show"); // Перемикаємо відображення меню
     });
 
     // Закриваємо меню, якщо клікнули поза ним
@@ -15,6 +15,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+
 
 // currency
 document.addEventListener("DOMContentLoaded", function () {
