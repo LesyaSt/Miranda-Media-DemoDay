@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   </head>
   <body>
     <header class="header">
@@ -91,12 +92,24 @@
     </header>
     <main>
       <section class="hero-block">
+        <!-- Swiper для фону -->
+        <div class="swiper heroSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image: url('./assets/img/logo-desktop.jpeg');"></div>
+            <div class="swiper-slide" style="background-image: url('./assets/img/logo-desktop2.jpeg');"></div>
+            <div class="swiper-slide" style="background-image: url('./assets/img/logo-desktop3.jpeg');"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        
+        <!-- Статичний текст поверх Swiper -->
         <div class="hero-text">
           <span>Lorem ipsum dolor sit amet.</span>
           <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h1>
           <button class="hero-btn">Zobrazit</button>
         </div>
       </section>
+      
       <section class="proposal">
         <div class="container">
           <div class="proposal-content">
@@ -132,81 +145,38 @@
               <h2>Zlate slitky</h2>
             </div>
             <div class="category item-6">
-              <p>historické</p>
-              <h2>Zlate mince</h2>
+              <p>Historické</p>
+              <h2>Zlate mince <i class="fa-solid fa-arrow-right"></i></h2>
             </div>
             <div class="category item-7">
               <p>Pamětní</p>
               <h2>Zlate mince CNB</h2>
             </div>
-          </div>
-          <button class="choose-btn">
+            <button class="choose-btn">
             <a href="">Zobrazit více</a>
+            <i class="fa-solid fa-arrow-right"></i>
           </button>
+          </div>
         </div>
       </section>
 <!--   product     -->
-      <section class="our-products">
-        <div class="container">
-     <div class="products-filter">
-       <a href="#">Novinky</a>
-       <a href="#">Nejprodávanější</a>
-       <a href="#">Doporučené</a>
-     </div>
-     <span class="products-filter-mobile">Novinky</span>
-          <div class="products-content">
-            <div class="product product-1">
-              <img src="./assets/img/produkt1.jpg" alt="">
-              <h2>Zlatá investiční mince American <br> Eagle 1/2 Oz ND</h2>
-              <span class="span-stock">Skladem</span>
-              
-                <data value="43 852">43 852 CZK</data>
-                <button class="hidden-button">
-                  <i class="fa-solid fa-cart-shopping"></i>
-                </button>
-              
-            </div>
-            <div class="product product-2">
-              <img src="./assets/img/produkt2.jpg" alt="">
-              <h2>500g investiční stříbrný slitek <br> Heraeus</h2>
-              <span class="span-stock">Skladem</span>
-              
-                <data value="43 852">43 852 CZK</data>
-                <button class="hidden-button">
-                  <i class="fa-solid fa-cart-shopping"></i>
-                </button>
-              
-            </div>
-            <div class="product product-3">
-              <img src="./assets/img/product3.jpg" alt="">
-              <h2>Stříbrná investiční mince <br> Rok Tygra Lunar III 1 Oz 2022</h2>
-              <span class="span-order">Na objednávku</span>
-              
-                <data value="43 852">43 852 CZK</data>
-                <button class="hidden-button">
-                  <i class="fa-solid fa-cart-shopping"></i>
-                </button>
-              
-            </div>
-            <div class="product product-4">
-               <img src="./assets/img/produkt4.jpg" alt="">
-              <h2>10 x 1g investiční zlatý slitek Argor Heraeus SA</h2>
-             <span class="span-unavailable">Momentálně nedostupné</span>
-             
-              <data value="43 852">43 852 CZK</data>
-              <button class="hidden-button">
-                <i class="fa-solid fa-cart-shopping"></i>
-              </button>
-            
-            </div>
-          </div>
-          <div>
-            <a href="">
-              <button class="product-btn">Zobrazit více produktů</button>
-              </a>
-          </div>
-        </div>
-      </section>
+<section class="our-products">
+  <div class="container">
+    <div class="products-filter">
+      <a href="#" class="filter-link active" data-filter="novinky">Novinky</a>
+      <a href="#" class="filter-link" data-filter="nejprodavanejsi">Nejprodávanější</a>
+      <a href="#" class="filter-link" data-filter="doporucene">Doporučené</a>
+    </div>
+    <span class="products-filter-mobile">Novinky</span>
+    <div class="products-content"></div> <!-- produkty se nacitaji dynamicky pomoci JS -->
+    <div>
+      <a href="">
+        <button class="product-btn">Zobrazit více produktů</button>
+      </a>
+    </div>
+  </div>
+</section>
+
 <!--   read     -->
       <section class="read">
         <h1 class="read-header">Přečtěte si z našeho blogu</h1>
@@ -217,8 +187,8 @@
             <h2 class="read-title"><a href="#">Lorem ipsum</a></h2>
             <div class="author">
               <i class="fa-regular fa-circle-user"></i>
-              <a href="author-profile.html">Lukas</a> |
-              <a href="#">0 comments</a>
+              <a href="author-profile.html" class="author-name">Lukas</a> |
+              <a href="#" class="comment">0 comments</a>
             </div>
           </article>
 
@@ -227,8 +197,8 @@
             <h2 class="read-title"><a href="#">Lorem ipsum</a></h2>
             <div class="author">
               <i class="fa-regular fa-circle-user"></i>
-              <a href="author-profile.html">Lukas</a> |
-              <a href="#">0 comments</a>
+              <a href="author-profile.html" class="author-name">Lukas</a> |
+              <a href="#" class="comment">0 comments</a>
             </div>
           </article>
 
@@ -237,8 +207,8 @@
             <h2 class="read-title"><a href="#">Lorem ipsum</a></h2>
             <div class="author">
               <i class="fa-regular fa-circle-user"></i>
-              <a href="author-profile.html">Lukas</a> |
-              <a href="#">0 comments</a>
+              <a href="author-profile.html" class="author-name">Lukas</a> |
+              <a href="#" class="comment">0 comments</a>
             </div>
           </article>
 
@@ -247,8 +217,8 @@
             <h2 class="read-title"><a href="#">Lorem ipsum</a></h2>
             <div class="author">
               <i class="fa-regular fa-circle-user"></i>
-              <a href="author-profile.html">Lukas</a> |
-              <a href="#">0 comments</a>
+              <a href="author-profile.html" class="author-name">Lukas</a> |
+              <a href="#" class="comment">0 comments</a>
             </div>
           </article>
 
@@ -257,8 +227,8 @@
             <h2 class="read-title"><a href="#">Lorem ipsum</a></h2>
             <div class="author">
               <i class="fa-regular fa-circle-user"></i>
-              <a href="author-profile.html">Lukas</a> |
-              <a href="#">0 comments</a>
+              <a href="author-profile.html" class="author-name">Lukas</a> |
+              <a href="#" class="comment">0 comments</a>
             </div>
           </article>
         </div>
@@ -411,5 +381,9 @@
      </div>
     </footer>
     <script src="script.js"></script>
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="swiper-init.js"></script>
+    
   </body>
 </html>
