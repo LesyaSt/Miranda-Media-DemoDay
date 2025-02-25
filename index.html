@@ -1,115 +1,125 @@
-
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header class="header">
       <div class="container">
         <div class="header-wrap">
-        <a href="/" class="logo"> LOGO </a>
+          <a href="/" class="logo"> LOGO </a>
 
-        <nav class="header-nav">
-          <ul class="header-ul">
-            <li class="dropdown">
-              <a href="#">
-                Producty
-                <i class="fa-solid fa-angle-down"></i>
-              </a>
+          <nav class="header-nav">
+            <ul class="header-ul">
+              <li class="dropdown">
+                <a href="#">
+                  Producty
+                  <i class="fa-solid fa-angle-down"></i>
+                </a>
 
-              <ul class="dropdown-menu" id="dropdown">
-                <li class="list">
-                  <a href="#">Zlate slitky</a>
-                </li>
-                <li class="list">
-                  <a href="#">Stribrne slitky</a>
-                </li>
-                <li class="list">
-                  <a href="#">Platynove slitky</a>
-                </li>
-                <li class="list">
-                  <a href="#">Investing slitky</a>
-                </li>
-              </ul>
-           
-            </li>
-            <li>
-              <a href="">Akční nabidka</a>
-            </li>
-            <li>
-              <a href="">O nás</a>
-            </li>
-            <li>
-              <a href="">Kontakt</a>
-            </li>
-          </ul>
-        </nav>
+                <ul class="dropdown-menu" id="dropdown">
+                  <li class="list">
+                    <a href="#">Zlate slitky</a>
+                  </li>
+                  <li class="list">
+                    <a href="#">Stribrne slitky</a>
+                  </li>
+                  <li class="list">
+                    <a href="#">Platynove slitky</a>
+                  </li>
+                  <li class="list">
+                    <a href="#">Investing slitky</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="">Akční nabidka</a>
+              </li>
+              <li>
+                <a href="">O nás</a>
+              </li>
+              <li>
+                <a href="">Kontakt</a>
+              </li>
+            </ul>
+          </nav>
 
-        <form class="search-container">
-          <input
-            class="search-input"
-            type="text"
-            id="search-input"
-            placeholder="Napište, co hledáte"
-            onkeyup="performSearch()"
-          />
-          <button type="submit" class="search-btn">
-            <img src="./assets/img/search.png" alt="" />
-          </button>
-        </form>
-        <form id="currency-form">
-          <label for="currency-select" id="currency-label"
-            >CZK <i class="fa-solid fa-angle-down"></i
-          ></label>
-          <select id="currency-select">
-            <option value="USD">USD</option>
-            <option value="EUR">EUR</option>
-            <option value="BTC">BTC</option>
-            <option value="CZK" selected>CZK</option>
-          </select>
-        </form>
+          <form class="search-container">
+            <input
+              class="search-input"
+              type="text"
+              id="search-input"
+              placeholder="Napište, co hledáte"
+              onkeyup="performSearch()"
+            />
+            <button type="submit" class="search-btn">
+              <img src="./assets/img/search.png" alt="" />
+            </button>
+          </form>
+          <form id="currency-form">
+            <label for="currency-select" id="currency-label"
+              >CZK <i class="fa-solid fa-angle-down"></i
+            ></label>
+            <select id="currency-select">
+              <option value="USD">USD</option>
+              <option value="EUR">EUR</option>
+              <option value="BTC">BTC</option>
+              <option value="CZK" selected>CZK</option>
+            </select>
+          </form>
 
-        <div class="cart">
-          <button class="cart-btn">Košík</button>
-          <span class="cart-badge" id="cart-count">2</span>
+          <div class="cart">
+            <button class="cart-btn">Košík</button>
+            <span class="cart-badge" id="cart-count">2</span>
 
-          <button class="account-btn">
-            <i class="fa-regular fa-circle-user"></i>
-          </button>
-        </div>
-        <div class="menu-btn">
-          <img src="./assets/img/Component 1.png" alt="" />
-        </div>
+            <button class="account-btn">
+              <i class="fa-regular fa-circle-user"></i>
+            </button>
           </div>
+          <div class="menu-btn">
+            <img src="./assets/img/Component 1.png" alt="" />
+          </div>
+        </div>
       </div>
-        
     </header>
     <main>
       <section class="hero-block">
-        <!-- Swiper для фону -->
         <div class="swiper heroSwiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide" style="background-image: url('./assets/img/logo-desktop.jpeg');"></div>
-            <div class="swiper-slide" style="background-image: url('./assets/img/logo-desktop2.jpeg');"></div>
-            <div class="swiper-slide" style="background-image: url('./assets/img/logo-desktop3.jpeg');"></div>
+            <div
+              class="swiper-slide"
+              style="background-image: url('./assets/img/logo-desktop.jpeg')"
+            ></div>
+            <div
+              class="swiper-slide"
+              style="background-image: url('./assets/img/logo-desktop2.jpeg')"
+            ></div>
+            <div
+              class="swiper-slide"
+              style="background-image: url('./assets/img/logo-desktop3.jpeg')"
+            ></div>
           </div>
           <div class="swiper-pagination"></div>
         </div>
-        
-        <!-- Статичний текст поверх Swiper -->
+
         <div class="hero-text">
           <span>Lorem ipsum dolor sit amet.</span>
           <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h1>
           <button class="hero-btn">Zobrazit</button>
         </div>
       </section>
-      
+
       <section class="proposal">
         <div class="container">
           <div class="proposal-content">
@@ -131,7 +141,7 @@
           </div>
         </div>
       </section>
-<!--   choose  -->
+
       <section class="choose">
         <div class="container">
           <h2 class="choose-title">Vyberte si z naši nabídky</h2>
@@ -153,202 +163,208 @@
               <h2>Zlate mince CNB</h2>
             </div>
             <button class="choose-btn">
-            <a href="">Zobrazit více</a>
-            <i class="fa-solid fa-arrow-right"></i>
-          </button>
+              <a href="">Zobrazit více</a>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
           </div>
         </div>
       </section>
-<!--   product     -->
-<section class="our-products">
-  <div class="container">
-    <div class="products-filter">
-      <a href="#" class="filter-link active" data-filter="novinky">Novinky</a>
-      <a href="#" class="filter-link" data-filter="nejprodavanejsi">Nejprodávanější</a>
-      <a href="#" class="filter-link" data-filter="doporucene">Doporučené</a>
-    </div>
-    <span class="products-filter-mobile">Novinky</span>
-    <div class="products-content"></div> <!-- produkty se nacitaji dynamicky pomoci JS -->
-    <div>
-      <a href="">
-        <button class="product-btn">Zobrazit více produktů</button>
-      </a>
-    </div>
-  </div>
-</section>
 
-<!--   read     -->
+      <section class="our-products">
+        <div class="container">
+          <div class="products-filter">
+            <a href="#" class="filter-link active" data-filter="novinky"
+              >Novinky</a
+            >
+            <a href="#" class="filter-link" data-filter="nejprodavanejsi"
+              >Nejprodávanější</a
+            >
+            <a href="#" class="filter-link" data-filter="doporucene"
+              >Doporučené</a
+            >
+          </div>
+          <span class="products-filter-mobile">Novinky</span>
+          <div class="products-content"></div>
+          <!-- produkty se nacitaji dynamicky pomoci JS -->
+          <div>
+            <a href="">
+              <button class="product-btn">Zobrazit více produktů</button>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!--   read     -->
       <section class="read">
         <h1 class="read-header">Přečtěte si z našeho blogu</h1>
         <div class="read-wraper">
-        <div class="grid-container">
-          <article class="lorem1">
-            <time datetime="2021-12-20">20.12.2021</time>
-            <h2 class="read-title"><a href="#">Lorem ipsum</a></h2>
-            <div class="author">
-              <i class="fa-regular fa-circle-user"></i>
-              <a href="author-profile.html" class="author-name">Lukas</a> |
-              <a href="#" class="comment">0 comments</a>
-            </div>
-          </article>
+          <div class="grid-container">
+            <article class="lorem1">
+              <time datetime="2021-12-20">20.12.2021</time>
+              <h2 class="read-title"><a href="#">Lorem ipsum</a></h2>
+              <div class="author">
+                <i class="fa-regular fa-circle-user"></i>
+                <a href="author-profile.html" class="author-name">Lukas</a> |
+                <a href="#" class="comment">0 comments</a>
+              </div>
+            </article>
 
-          <article class="lorem2">
-            <time datetime="2021-12-20">20.12.2021</time>
-            <h2 class="read-title"><a href="#">Lorem ipsum</a></h2>
-            <div class="author">
-              <i class="fa-regular fa-circle-user"></i>
-              <a href="author-profile.html" class="author-name">Lukas</a> |
-              <a href="#" class="comment">0 comments</a>
-            </div>
-          </article>
+            <article class="lorem2">
+              <time datetime="2021-12-20">20.12.2021</time>
+              <h2 class="read-title"><a href="#">Lorem ipsum</a></h2>
+              <div class="author">
+                <i class="fa-regular fa-circle-user"></i>
+                <a href="author-profile.html" class="author-name">Lukas</a> |
+                <a href="#" class="comment">0 comments</a>
+              </div>
+            </article>
 
-          <article class="lorem3">
-            <time datetime="2021-12-20">20.12.2021</time>
-            <h2 class="read-title"><a href="#">Lorem ipsum</a></h2>
-            <div class="author">
-              <i class="fa-regular fa-circle-user"></i>
-              <a href="author-profile.html" class="author-name">Lukas</a> |
-              <a href="#" class="comment">0 comments</a>
-            </div>
-          </article>
+            <article class="lorem3">
+              <time datetime="2021-12-20">20.12.2021</time>
+              <h2 class="read-title"><a href="#">Lorem ipsum</a></h2>
+              <div class="author">
+                <i class="fa-regular fa-circle-user"></i>
+                <a href="author-profile.html" class="author-name">Lukas</a> |
+                <a href="#" class="comment">0 comments</a>
+              </div>
+            </article>
 
-          <article class="lorem4">
-            <time datetime="2021-12-20">20.12.2021</time>
-            <h2 class="read-title"><a href="#">Lorem ipsum</a></h2>
-            <div class="author">
-              <i class="fa-regular fa-circle-user"></i>
-              <a href="author-profile.html" class="author-name">Lukas</a> |
-              <a href="#" class="comment">0 comments</a>
-            </div>
-          </article>
+            <article class="lorem4">
+              <time datetime="2021-12-20">20.12.2021</time>
+              <h2 class="read-title"><a href="#">Lorem ipsum</a></h2>
+              <div class="author">
+                <i class="fa-regular fa-circle-user"></i>
+                <a href="author-profile.html" class="author-name">Lukas</a> |
+                <a href="#" class="comment">0 comments</a>
+              </div>
+            </article>
 
-          <article class="lorem5">
-            <time datetime="2021-12-20">20.12.2021</time>
-            <h2 class="read-title"><a href="#">Lorem ipsum</a></h2>
-            <div class="author">
-              <i class="fa-regular fa-circle-user"></i>
-              <a href="author-profile.html" class="author-name">Lukas</a> |
-              <a href="#" class="comment">0 comments</a>
-            </div>
-          </article>
+            <article class="lorem5">
+              <time datetime="2021-12-20">20.12.2021</time>
+              <h2 class="read-title"><a href="#">Lorem ipsum</a></h2>
+              <div class="author">
+                <i class="fa-regular fa-circle-user"></i>
+                <a href="author-profile.html" class="author-name">Lukas</a> |
+                <a href="#" class="comment">0 comments</a>
+              </div>
+            </article>
+          </div>
+          <div class="read-more">
+            <a href="">Zobrazit více</a>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
         </div>
-        <div class="read-more">
-          <a href="">Zobrazit více</a>
-          <i class="fa-solid fa-arrow-right"></i>
-        </div>
-      </div>
       </section>
-<!--    benefits    -->
+      <!--    benefits    -->
       <section class="benefits">
         <div class="container">
           <div class="benefit-content">
-          <div class="benefit-item">
-            <img src="./assets/img/delivery.png" alt="" />
-            <p class="benefit-text">
-              Doprava zdarma <br />
-              na vše od 5 000 Kč
-            </p>
-          </div>
-          <div class="benefit-item">
-            <img src="./assets/img/finance.png" alt="" />
-            <p class="benefit-text">
-              Okamžitá fixace cen <br />
-              do 150 000 Kč
-            </p>
-          </div>
-          <div class="benefit-item">
-            <img src="./assets/img/qr-code.png" alt="" />
-            <p class="benefit-text">
-              Možnost platby <br />
-              pomocí QR kódu
-            </p>
-          </div>
-          <div class="benefit-item">
-            <div class="border-muzeum">
-              <img src="./assets/img/muzeum.png" alt="" />
+            <div class="benefit-item">
+              <img src="./assets/img/delivery.png" alt="" />
+              <p class="benefit-text">
+                Doprava zdarma <br />
+                na vše od 5 000 Kč
+              </p>
             </div>
-            <p class="benefit-text">
-              Vykupujeme historické <br />
-              i novodobé mince
-            </p>
+            <div class="benefit-item">
+              <img src="./assets/img/finance.png" alt="" />
+              <p class="benefit-text">
+                Okamžitá fixace cen <br />
+                do 150 000 Kč
+              </p>
+            </div>
+            <div class="benefit-item">
+              <img src="./assets/img/qr-code.png" alt="" />
+              <p class="benefit-text">
+                Možnost platby <br />
+                pomocí QR kódu
+              </p>
+            </div>
+            <div class="benefit-item">
+              <div class="border-muzeum">
+                <img src="./assets/img/muzeum.png" alt="" />
+              </div>
+              <p class="benefit-text">
+                Vykupujeme historické <br />
+                i novodobé mince
+              </p>
+            </div>
           </div>
-        </div>
         </div>
       </section>
-<!--    leave contact    -->
+      <!--    leave contact    -->
       <section class="stay-container">
         <div class="container">
           <div class="svg-icon">
-          <i class="fa-regular fa-comment-dots"></i>
-        </div>
-        <form action="" class="contact-form">
-          <fieldset class="contact-field">
-            <legend class="stay-header">Zůstaňtě s námi v kontaktu</legend>
-            <div class="input-div">
-              <label for="email" class="sr-only">E-mail</label>
-              <input
-                id="email"
-                class="input-contact"
-                type="email"
-                placeholder="@Zadej svuj email"
-              />
-              <button
-                class="contact-button"
-                type="submit"
-                aria-label="Odeslat e-mail"
-              >
-                Odoslať
-                <i class="fa-solid fa-arrow-right"></i>
-              </button>
-            </div>
-          </fieldset>
-        </form>
+            <i class="fa-regular fa-comment-dots"></i>
+          </div>
+          <form action="" class="contact-form">
+            <fieldset class="contact-field">
+              <legend class="stay-header">Zůstaňtě s námi v kontaktu</legend>
+              <div class="input-div">
+                <label for="email" class="sr-only">E-mail</label>
+                <input
+                  id="email"
+                  class="input-contact"
+                  type="email"
+                  placeholder="@Zadej svuj email"
+                />
+                <button
+                  class="contact-button"
+                  type="submit"
+                  aria-label="Odeslat e-mail"
+                >
+                  Odoslať
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </fieldset>
+          </form>
         </div>
       </section>
     </main>
-<!--   footer   -->
+    <!--   footer   -->
     <footer class="footer-section">
-     <div class="container">
+      <div class="container">
         <div class="footer-logo">logo</div>
         <div class="footer-main">
-      <section class="footer-links">
-        <div class="footer-ul">
-          <h3>Jak nakoupit</h3>
-          <ul>
-            <li><a href="#">Platební podmínky</a></li>
-            <li><a href="#">Fixační podmínky</a></li>
-            <li><a href="#">Dodací a skladovací podmínky</a></li>
-            <li><a href="#">Obchodní podmínky</a></li>
-            <li><a href="#">Ochrana osobních údajů</a></li>
-            <li><a href="#">Reklamace</a></li>
-          </ul>
-        </div>
-        <div class="footer-ul">
-          <h3>Vase objednavky</h3>
-          <ul>
-            <li><a href="">Stav objednávky</a></li>
-            <li><a href="">Stav poštovní zásilky</a></li>
-            <li><a href="">Přehled služeb a benefitů</a></li>
-            <li><a href="">Výkupní podmínky</a></li>
-            <li><a href="">Nejčastější dotazy</a></li>
-            <li><a href="">Grafy investičních kovů</a></li>
-          </ul>
-        </div>
-            
-        <div class="footer-ul">
-          <h3>O společnosti</h3>
-          <ul>
-            <li><a href="">Základní informace</a></li>
-            <li><a href="">Pobočky</a></li>
-            <li><a href="">Kontakty</a></li>
-            <li><a href="">Partneři</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Kariéra</a></li>
-          </ul>
-        </div>
-      </section>
-       
-      <section class="contact footer-ul">
+          <section class="footer-links">
+            <div class="footer-ul">
+              <h3>Jak nakoupit</h3>
+              <ul>
+                <li><a href="#">Platební podmínky</a></li>
+                <li><a href="#">Fixační podmínky</a></li>
+                <li><a href="#">Dodací a skladovací podmínky</a></li>
+                <li><a href="#">Obchodní podmínky</a></li>
+                <li><a href="#">Ochrana osobních údajů</a></li>
+                <li><a href="#">Reklamace</a></li>
+              </ul>
+            </div>
+            <div class="footer-ul">
+              <h3>Vase objednavky</h3>
+              <ul>
+                <li><a href="">Stav objednávky</a></li>
+                <li><a href="">Stav poštovní zásilky</a></li>
+                <li><a href="">Přehled služeb a benefitů</a></li>
+                <li><a href="">Výkupní podmínky</a></li>
+                <li><a href="">Nejčastější dotazy</a></li>
+                <li><a href="">Grafy investičních kovů</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-ul">
+              <h3>O společnosti</h3>
+              <ul>
+                <li><a href="">Základní informace</a></li>
+                <li><a href="">Pobočky</a></li>
+                <li><a href="">Kontakty</a></li>
+                <li><a href="">Partneři</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Kariéra</a></li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="contact footer-ul">
             <h3>Kontakt</h3>
             <div class="social">
               <img src="./assets/img/Group 41.png" alt="" />
@@ -370,20 +386,19 @@
             </div>
           </section>
         </div>
-       <section class="copyright-section">
-         <div>
-           <span>Copyright 2021 Constant Invest</span>
-         </div>
-         <div>
-           <span>vytvoril Shoptet | MirandaMedia Group, s.r.o.</span>
-         </div>
-       </section>
-     </div>
+        <section class="copyright-section">
+          <div>
+            <span>Copyright 2021 Constant Invest</span>
+          </div>
+          <div>
+            <span>vytvoril Shoptet | MirandaMedia Group, s.r.o.</span>
+          </div>
+        </section>
+      </div>
     </footer>
     <script src="script.js"></script>
-        <!-- Swiper JS -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <script src="swiper-init.js"></script>
-    
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="swiper-init.js"></script>
   </body>
 </html>

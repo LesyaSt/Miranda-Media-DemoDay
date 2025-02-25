@@ -10,6 +10,10 @@
   font-weight: 500;
   font-style: normal;
 }
+body {
+  font-family: "Montserrat";
+}
+
 li {
   list-style: none;
 }
@@ -94,7 +98,7 @@ a {
   .item-3 {
     width: 334px !important;
     height: 195px !important;
-    font-size: 24px !important;
+    font-size: 18px !important;
   }
   .choose {
     height: 304px !important;
@@ -239,7 +243,8 @@ a {
     grid-column: span 1;
     grid-row: 3;
   }
-  .lorem3, .lorem5 {
+  .lorem3,
+  .lorem5 {
     display: none !important;
   }
   .read-more {
@@ -617,7 +622,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 36px;
+  font-size: 24px;
   color: #ffffff;
 }
 
