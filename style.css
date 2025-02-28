@@ -50,8 +50,43 @@ a {
   .account-btn {
     display: none;
   }
-  .menu-btn {
+  .burger-btn {
     display: block !important;
+    border: none;
+    background: none;
+    z-index: 1001;
+    position: relative;
+  }
+  .mobile-nav {
+    position: absolute;
+    top: 122px;
+    right: 0;
+    width: 75%;
+    height: 600px;
+    background: #131313;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  .mobile-nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  .mobile-nav li {
+    margin: 40px 0;
+    text-align: center;
+  }
+  .mobile-nav a {
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  .mobile-nav a:hover {
+    color: #ecb235;
   }
   .hero-block {
     height: 600px !important;
@@ -521,7 +556,8 @@ a {
   margin-left: 15px;
 }
 
-.menu-btn {
+.burger-btn,
+.mobile-nav {
   display: none;
 }
 
