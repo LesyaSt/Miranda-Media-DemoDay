@@ -134,10 +134,10 @@ a {
       font-size: 24px !important;
     }
   }
-  .hero-btn {
-    width: 181px !important;
-    height: 43px !important;
-  }
+  // .hero-btn {
+  //   width: 181px !important;
+  //   height: 43px !important;
+  // }
 
   .proposal-content {
     height: 678px !important;
@@ -157,6 +157,7 @@ a {
       background: $white;
       border-radius: 5px;
       transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+      color: $bg-choose;
     }
     .hero-btn-mobile:hover {
       background: $bg-choose;
