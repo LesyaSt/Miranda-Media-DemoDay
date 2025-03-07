@@ -27,7 +27,7 @@ a {
 li {
   list-style: none;
 }
-// ======= Міксіни =========
+
 @mixin flex-center($direction: row, $justify: center, $align: center, $gap: 0) {
   display: flex;
   flex-direction: $direction;
@@ -880,7 +880,7 @@ li {
 .sr-only {
   display: none;
 }
-/* Media */
+
 @media (max-width: 1520px) {
   .products-content {
     display: grid;

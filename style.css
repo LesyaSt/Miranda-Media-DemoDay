@@ -942,7 +942,6 @@ li {
   display: none;
 }
 
-/* Media */
 @media (max-width: 1520px) {
   .products-content {
     display: grid;
