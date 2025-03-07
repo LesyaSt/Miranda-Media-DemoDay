@@ -19,90 +19,81 @@
       <div class="container">
         <div class="header-wrap">
           <a href="/" class="logo"> LOGO </a>
-
+          <!-- navigation -->
           <nav class="header-nav">
-            <ul class="header-ul">
+            <!-- desktop menu -->
+            <ul class="desktop-nav">
               <li class="dropdown">
-                <a href="#">
-                  Producty
-                  <i class="fa-solid fa-angle-down"></i>
-                </a>
-
+                <button class="dropdown-btn">
+                  Producty <i class="fa-solid fa-angle-down"></i>
+                </button>
                 <ul class="dropdown-menu" id="dropdown">
-                  <li class="list">
-                    <a href="#">Zlate slitky</a>
-                  </li>
-                  <li class="list">
-                    <a href="#">Stribrne slitky</a>
-                  </li>
-                  <li class="list">
-                    <a href="#">Platynove slitky</a>
-                  </li>
-                  <li class="list">
-                    <a href="#">Investing slitky</a>
-                  </li>
+                  <li class="list"><a href="#">Zlate slitky</a></li>
+                  <li class="list"><a href="#">Stribrne slitky</a></li>
+                  <li class="list"><a href="#">Platynove slitky</a></li>
+                  <li class="list"><a href="#">Investing slitky</a></li>
                 </ul>
               </li>
-              <li>
-                <a href="">Akční nabidka</a>
-              </li>
-              <li>
-                <a href="">O nás</a>
-              </li>
-              <li>
-                <a href="">Kontakt</a>
-              </li>
+              <li><a href="#">Akční nabidka</a></li>
+              <li><a href="#">O nás</a></li>
+              <li><a href="#">Kontakt</a></li>
+            </ul>
+            <!-- mobile menu -->
+            <ul class="mobile-nav" id="mobile-menu">
+              <li><a href="#">Account</a></li>
+              <li><a href="#">Sortiment</a></li>
+              <li><a href="#">Akční nabidka</a></li>
+              <li><a href="#">Mince CNB</a></li>
+              <li><a href="#">Prodejny</a></li>
+              <li><a href="#">O nás</a></li>
+              <li><a href="#">Kontakt</a></li>
             </ul>
           </nav>
-
+          <!-- search -->
           <form class="search-container">
             <input
               class="search-input"
               type="text"
               id="search-input"
               placeholder="Napište, co hledáte"
-              onkeyup="performSearch()"
             />
             <button type="submit" class="search-btn">
-              <img src="./assets/img/search.png" alt="" />
+              <i class="fa-solid fa-magnifying-glass"></i>
             </button>
           </form>
+          <!-- currency -->
           <form id="currency-form">
-            <label for="currency-select" id="currency-label"
-              >CZK <i class="fa-solid fa-angle-down"></i
-            ></label>
-            <select id="currency-select">
+            <label for="currency-select" id="currency-label">
+              CZK
+              <i class="fa-solid fa-angle-down"></i>
+            </label>
+
+            <select class="currency-options" id="currency-select">
               <option value="USD">USD</option>
               <option value="EUR">EUR</option>
               <option value="BTC">BTC</option>
               <option value="CZK" selected>CZK</option>
             </select>
           </form>
-
+          <!-- cart and account -->
           <div class="cart">
-            <button class="cart-btn">Košík</button>
+            <button class="cart-btn" type="button">Košík</button>
             <span class="cart-badge" id="cart-count">0</span>
-
+            <div class="cart-span">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
             <button class="account-btn">
               <i class="fa-regular fa-circle-user"></i>
             </button>
           </div>
+          <!-- burger btn -->
           <button class="burger-btn">
-            <img src="./assets/img/Component 1.png" alt="" />
+            <i class="fa-solid fa-bars"></i>
           </button>
-          <nav class="mobile-nav">
-            <ul>
-                <li><a href="#">Sortiment</a></li>
-                <li><a href="#">Akční nabidka</a></li>
-                <li><a href="#">Mince CNB</a></li>
-                <li><a href="#">Prodejny</a></li>
-                <li><a href="#">O nás</a></li>
-                <li><a href="#">Kontakt</a></li>
-            </ul>
-        </nav>
         </div>
       </div>
     </header>
+    <!-- main -->
     <main>
       <section class="hero-block">
         <div class="swiper heroSwiper">
@@ -129,7 +120,7 @@
           <button class="hero-btn">Zobrazit</button>
         </div>
       </section>
-
+      <!-- -->
       <section class="proposal">
         <div class="container">
           <div class="proposal-content">
@@ -151,37 +142,38 @@
           </div>
         </div>
       </section>
-
+      <!--  -->
       <section class="choose">
         <div class="container">
           <h2 class="choose-title">Vyberte si z naši nabídky</h2>
           <div class="choose-content">
             <div class="category item-4">
-              <p>Investiční</p>
-              <h2>Zlate mince</h2>
+              <a href="#" class="category-describe">Investiční</a>
+              <a href="#" class="category-name">Zlate mince</a>
             </div>
             <div class="category item-5">
-              <p>Investiční</p>
-              <h2>Zlate slitky</h2>
+              <a href="#" class="category-describe">Investiční</a>
+              <a href="#" class="category-name">Zlate slitky</a>
             </div>
             <div class="category item-6">
-              <p>Historické</p>
-              <h2>Zlate mince <i class="fa-solid fa-arrow-right"></i></h2>
+              <a href="#" class="category-describe">Historické</a>
+              <a href="#" class="category-name">Zlate mince <i class="fa-solid fa-arrow-right"></i></a>
+              
             </div>
             <div class="category item-7">
-              <p>Pamětní</p>
-              <h2>Zlate mince CNB</h2>
+              <a href="#" class="category-describe">Pamětní</a>
+              <a href="#" class="category-name">Zlate mince CNB</a>
             </div>
             <button class="choose-btn">
-              <a href="">Zobrazit více</a>
+              Zobrazit více
               <i class="fa-solid fa-arrow-right"></i>
             </button>
           </div>
         </div>
       </section>
-
+      <!--  -->
       <section class="our-products">
-        <div class="container">
+        <div class="container container-prod">
           <div class="products-filter">
             <a href="#" class="filter-link active" data-filter="novinky"
               >Novinky</a
@@ -196,11 +188,7 @@
           <span class="products-filter-mobile">Novinky</span>
           <div class="products-content"></div>
           <!-- produkty se nacitaji dynamicky pomoci JS -->
-          <div>
-            <a href="">
-              <button class="product-btn">Zobrazit více produktů</button>
-            </a>
-          </div>
+          <button class="product-btn">Zobrazit více produktů</button>
         </div>
       </section>
       <!--   read     -->
@@ -332,14 +320,14 @@
         </div>
       </section>
     </main>
-    <!--   footer   -->
-    <footer class="footer-section">
+    <!-- footer -->
+    <footer class="footer">
       <div class="container">
-        <div class="footer-logo">logo</div>
-        <div class="footer-main">
-          <section class="footer-links">
-            <div class="footer-ul">
-              <h3>Jak nakoupit</h3>
+        <div class="footer-content">
+          <div class="footer-logo"><a href="#">LOGO</a></div>
+          <div class="footer-columns">
+            <div class="footer-column">
+              <h4>Jak nakoupit</h4>
               <ul>
                 <li><a href="#">Platební podmínky</a></li>
                 <li><a href="#">Fixační podmínky</a></li>
@@ -349,63 +337,50 @@
                 <li><a href="#">Reklamace</a></li>
               </ul>
             </div>
-            <div class="footer-ul">
-              <h3>Vase objednavky</h3>
+            <div class="footer-column">
+              <h4>Vaše objednávky</h4>
               <ul>
-                <li><a href="">Stav objednávky</a></li>
-                <li><a href="">Stav poštovní zásilky</a></li>
-                <li><a href="">Přehled služeb a benefitů</a></li>
-                <li><a href="">Výkupní podmínky</a></li>
-                <li><a href="">Nejčastější dotazy</a></li>
-                <li><a href="">Grafy investičních kovů</a></li>
+                <li><a href="#">Stav objednávky</a></li>
+                <li><a href="#">Stav poštovní zásilky</a></li>
+                <li><a href="#">Přehled služeb a benefitů</a></li>
+                <li><a href="#">Výkupní podmínky</a></li>
+                <li><a href="#">Nejčastější dotazy</a></li>
+                <li><a href="#">Grafy investičních kovů</a></li>
               </ul>
             </div>
-
-            <div class="footer-ul">
-              <h3>O společnosti</h3>
+            <div class="footer-column">
+              <h4>O společnosti</h4>
               <ul>
-                <li><a href="">Základní informace</a></li>
-                <li><a href="">Pobočky</a></li>
-                <li><a href="">Kontakty</a></li>
-                <li><a href="">Partneři</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Kariéra</a></li>
+                <li><a href="#">Základní informace</a></li>
+                <li><a href="#">Pobočky</a></li>
+                <li><a href="#">Kontakty</a></li>
+                <li><a href="#">Partneři</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Kariéra</a></li>
               </ul>
             </div>
-          </section>
-
-          <section class="contact footer-ul">
-            <h3>Kontakt</h3>
-            <div class="social">
-              <img src="./assets/img/Group 41.png" alt="" />
-              <img src="./assets/img/facebook.png" alt="" />
+            <div class="footer-column">
+              <h4>Kontakt</h4>
+              <ul class="footer-contact">
+                <li>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li><i class="fa-solid fa-phone"></i> +421 919 163 181</li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i> info@constantinvest.com
+                </li>
+              </ul>
             </div>
-            <div class="contact-info">
-              <div class="contact-item">
-                <i class="fa-solid fa-phone"></i>
-                <h2><a href="tel:+421919163181">+421 919 163 181</a></h2>
-              </div>
-              <div class="contact-item">
-                <i class="fa-regular fa-envelope"></i>
-                <h2>
-                  <a href="mailto:info@constantinvest.com">
-                    info@constantinvest.com
-                  </a>
-                </h2>
-              </div>
-            </div>
-          </section>
+          </div>
         </div>
-        <section class="copyright-section">
-          <div>
-            <span>Copyright 2021 Constant Invest</span>
-          </div>
-          <div>
-            <span>vytvoril Shoptet | MirandaMedia Group, s.r.o.</span>
-          </div>
-        </section>
+        <div class="footer-bottom">
+          <p>Copyright 2021 Constant Invest</p>
+          <p>vytvořil Shoptet | MirandaMedia Group, s.r.o.</p>
+        </div>
       </div>
     </footer>
+
     <script src="script.js"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

@@ -4,7 +4,7 @@
 		"title": "Zlatá investiční mince American Eagle 1/2 Oz ND",
 		"availability": "Skladem",
 		"price": 43852,
-		"imgSrc": "/assets/img/product1.jpg",
+		"imgSrc": "/assets/img/produkt1.jpg",
 		"flags": ["Novinka", "Výprodej"]
 	},
 	{
@@ -12,8 +12,8 @@
 		"title": "500g investiční stříbrný slitek Heraeus",
 		"availability": "Skladem",
 		"price": 28465,
-		"imgSrc": "/assets/img/product2.jpg",
-		"flags": ["Tip", "Výprodej"]
+		"imgSrc": "/assets/img/produkt2.jpg",
+		"flags": ["Výprodej"]
 	},
 	{
 		"category": "Novinky",
@@ -28,7 +28,7 @@
 		"title": "10 x 1g investiční zlatý slitek Argor Heraeus SA",
 		"availability": "Momentálně nedostupné",
 		"price": 65875,
-		"imgSrc": "/assets/img/product4.jpg",
+		"imgSrc": "/assets/img/produkt4.jpg",
 		"flags": []
 	},
 	{
@@ -44,7 +44,7 @@
 		"title": "Zlatá investiční mince American Eagle 1/2 Oz ND",
 		"availability": "Skladem",
 		"price": 43852,
-		"imgSrc": "/assets/img/product1.jpg",
+		"imgSrc": "/assets/img/produkt1.jpg",
 		"flags": ["Novinka", "Výprodej"]
 	},
 	{
@@ -52,7 +52,7 @@
 		"title": "10 x 1g investiční zlatý slitek Argor Heraeus SA",
 		"availability": "Momentálně nedostupné",
 		"price": 65875,
-		"imgSrc": "/assets/img/product4.jpg",
+		"imgSrc": "/assets/img/produkt4.jpg",
 		"flags": []
 	},
 	{
@@ -60,8 +60,8 @@
 		"title": "500g investiční stříbrný slitek Heraeus",
 		"availability": "Skladem",
 		"price": 28465,
-		"imgSrc": "/assets/img/product2.jpg",
-		"flags": ["Tip", "Výprodej"]
+		"imgSrc": "/assets/img/produkt2.jpg",
+		"flags": ["Výprodej"]
 	},
 	{
 		"category": "Novinky",
@@ -76,7 +76,7 @@
 		"title": "10 x 1g investiční zlatý slitek Argor Heraeus SA",
 		"availability": "Momentálně nedostupné",
 		"price": 65875,
-		"imgSrc": "/assets/img/product4.jpg",
+		"imgSrc": "/assets/img/produkt4.jpg",
 		"flags": []
 	},
 	{
@@ -92,7 +92,7 @@
 		"title": "Zlatá investiční mince American Eagle 1/2 Oz ND",
 		"availability": "Skladem",
 		"price": 43852,
-		"imgSrc": "/assets/img/product1.jpg",
+		"imgSrc": "/assets/img/produkt1.jpg",
 		"flags": ["Novinka", "Výprodej"]
 	},
 	{
@@ -100,7 +100,7 @@
 		"title": "10 x 1g investiční zlatý slitek Argor Heraeus SA",
 		"availability": "Momentálně nedostupné",
 		"price": 65875,
-		"imgSrc": "/assets/img/product4.jpg",
+		"imgSrc": "/assets/img/produkt4.jpg",
 		"flags": []
 	},
 	{
@@ -108,15 +108,15 @@
 		"title": "500g investiční stříbrný slitek Heraeus",
 		"availability": "Skladem",
 		"price": 28465,
-		"imgSrc": "/assets/img/product2.jpg",
-		"flags": ["Tip", "Výprodej"]
+		"imgSrc": "/assets/img/produkt2.jpg",
+		"flags": ["Výprodej"]
 	},
 	{
 		"category": "Novinky",
 		"title": "Zlatá investiční mince American Eagle 1/2 Oz ND",
 		"availability": "Skladem",
 		"price": 43852,
-		"imgSrc": "/assets/img/product1.jpg",
+		"imgSrc": "/assets/img/produkt1.jpg",
 		"flags": ["Novinka", "Výprodej"]
 	},
 	{
@@ -124,15 +124,15 @@
 		"title": "500g investiční stříbrný slitek Heraeus",
 		"availability": "Skladem",
 		"price": 28465,
-		"imgSrc": "/assets/img/product2.jpg",
-		"flags": ["Tip", "Výprodej"]
+		"imgSrc": "/assets/img/produkt2.jpg",
+		"flags": ["Výprodej"]
 	},
 	{
 		"category": "Nejprodávanější",
 		"title": "Zlatá investiční mince American Eagle 1/2 Oz ND",
 		"availability": "Skladem",
 		"price": 43852,
-		"imgSrc": "/assets/img/product1.jpg",
+		"imgSrc": "/assets/img/produkt1.jpg",
 		"flags": ["Novinka", "Výprodej"]
 	},
 	{
@@ -140,7 +140,7 @@
 		"title": "10 x 1g investiční zlatý slitek Argor Heraeus SA",
 		"availability": "Momentálně nedostupné",
 		"price": 65875,
-		"imgSrc": "/assets/img/product4.jpg",
+		"imgSrc": "/assets/img/produkt4.jpg",
 		"flags": []
 	},
 	{
@@ -148,8 +148,8 @@
 		"title": "500g investiční stříbrný slitek Heraeus",
 		"availability": "Skladem",
 		"price": 28465,
-		"imgSrc": "/assets/img/product2.jpg",
-		"flags": ["Tip", "Výprodej"]
+		"imgSrc": "/assets/img/produkt2.jpg",
+		"flags": ["Výprodej"]
 	},
 	{
 		"category": "Nejprodávanější",
@@ -164,7 +164,7 @@
 		"title": "10 x 1g investiční zlatý slitek Argor Heraeus SA",
 		"availability": "Momentálně nedostupné",
 		"price": 65875,
-		"imgSrc": "/assets/img/product4.jpg",
+		"imgSrc": "/assets/img/produkt4.jpg",
 		"flags": []
 	},
 	{
@@ -172,7 +172,7 @@
 		"title": "Zlatá investiční mince American Eagle 1/2 Oz ND",
 		"availability": "Skladem",
 		"price": 43852,
-		"imgSrc": "/assets/img/product1.jpg",
+		"imgSrc": "/assets/img/produkt1.jpg",
 		"flags": ["Novinka", "Výprodej"]
 	},
 	{
@@ -180,15 +180,15 @@
 		"title": "500g investiční stříbrný slitek Heraeus",
 		"availability": "Skladem",
 		"price": 28465,
-		"imgSrc": "/assets/img/product2.jpg",
-		"flags": ["Tip", "Výprodej"]
+		"imgSrc": "/assets/img/produkt2.jpg",
+		"flags": ["Výprodej"]
 	},
 	{
 		"category": "Nejprodávanější",
 		"title": "10 x 1g investiční zlatý slitek Argor Heraeus SA",
 		"availability": "Momentálně nedostupné",
 		"price": 65875,
-		"imgSrc": "/assets/img/product4.jpg",
+		"imgSrc": "/assets/img/produkt4.jpg",
 		"flags": []
 	},
 	{
@@ -204,7 +204,7 @@
 		"title": "Zlatá investiční mince American Eagle 1/2 Oz ND",
 		"availability": "Skladem",
 		"price": 43852,
-		"imgSrc": "/assets/img/product1.jpg",
+		"imgSrc": "/assets/img/produkt1.jpg",
 		"flags": ["Novinka", "Výprodej"]
 	},
 	{
@@ -228,23 +228,23 @@
 		"title": "Zlatá investiční mince American Eagle 1/2 Oz ND",
 		"availability": "Skladem",
 		"price": 43852,
-		"imgSrc": "/assets/img/product1.jpg",
+		"imgSrc": "/assets/img/produkt1.jpg",
 		"flags": ["Novinka", "Výprodej"]
 	},
 	{
-		"category": "Nejprodávanější,
+		"category": "Nejprodávanější",
 		"title": "500g investiční stříbrný slitek Heraeus",
 		"availability": "Skladem",
 		"price": 28465,
-		"imgSrc": "/assets/img/product2.jpg",
-		"flags": ["Tip", "Výprodej"]
+		"imgSrc": "/assets/img/produkt2.jpg",
+		"flags": ["Výprodej"]
 	},
 	{
 		"category": "Nejprodávanější",
 		"title": "10 x 1g investiční zlatý slitek Argor Heraeus SA",
 		"availability": "Momentálně nedostupné",
 		"price": 65875,
-		"imgSrc": "/assets/img/product4.jpg",
+		"imgSrc": "/assets/img/produkt4.jpg",
 		"flags": []
 	},
 	{
@@ -252,8 +252,8 @@
 		"title": "500g investiční stříbrný slitek Heraeus",
 		"availability": "Skladem",
 		"price": 28465,
-		"imgSrc": "/assets/img/product2.jpg",
-		"flags": ["Tip", Výprodej"]
+		"imgSrc": "/assets/img/produkt2.jpg",
+		"flags": ["Výprodej"]
 	},
 
 	{
@@ -261,7 +261,7 @@
 		"title": "Zlatá investiční mince American Eagle 1/2 Oz ND",
 		"availability": "Skladem",
 		"price": 43852,
-		"imgSrc": "/assets/img/product1.jpg",
+		"imgSrc": "/assets/img/produkt1.jpg",
 		"flags": ["Novinka", "Výprodej"]
 	},
 	{
@@ -269,7 +269,7 @@
 		"title": "10 x 1g investiční zlatý slitek Argor Heraeus SA",
 		"availability": "Momentálně nedostupné",
 		"price": 65875,
-		"imgSrc": "/assets/img/product4.jpg",
+		"imgSrc": "/assets/img/produkt4.jpg",
 		"flags": []
 	},
 	{
@@ -277,8 +277,8 @@
 		"title": "500g investiční stříbrný slitek Heraeus",
 		"availability": "Skladem",
 		"price": 28465,
-		"imgSrc": "/assets/img/product2.jpg",
-		"flags": ["Tip", "Výprodej"]
+		"imgSrc": "/assets/img/produkt2.jpg",
+		"flags": ["Výprodej"]
 	},
 	{
 		"category": "Doporučené",
@@ -287,13 +287,13 @@
 		"price": 102940,
 		"imgSrc": "/assets/img/product3.jpg",
 		"flags": ["Novinka"]
-	}
+	},
 	{
 		"category": "Doporučené",
 		"title": "10 x 1g investiční zlatý slitek Argor Heraeus SA",
 		"availability": "Momentálně nedostupné",
 		"price": 65875,
-		"imgSrc": "/assets/img/product4.jpg",
+		"imgSrc": "/assets/img/produkt4.jpg",
 		"flags": []
 	},
 	{
@@ -301,7 +301,7 @@
 		"title": "Zlatá investiční mince American Eagle 1/2 Oz ND",
 		"availability": "Skladem",
 		"price": 43852,
-		"imgSrc": "/assets/img/product1.jpg",
+		"imgSrc": "/assets/img/produkt1.jpg",
 		"flags": ["Novinka", "Výprodej"]
 	},
 	{
@@ -309,40 +309,16 @@
 		"title": "500g investiční stříbrný slitek Heraeus",
 		"availability": "Skladem",
 		"price": 28465,
-		"imgSrc": "/assets/img/product2.jpg",
-		"flags": ["Tip", "Výprodej"]
+		"imgSrc": "/assets/img/produkt2.jpg",
+		"flags": ["Výprodej"]
 	},
 	{
 		"category": "Doporučené",
 		"title": "10 x 1g investiční zlatý slitek Argor Heraeus SA",
 		"availability": "Momentálně nedostupné",
 		"price": 65875,
-		"imgSrc": "/assets/img/product4.jpg",
+		"imgSrc": "/assets/img/produkt4.jpg",
 		"flags": []
-	},
-	{
-		"category": "Doporučené",
-		"title": "Stříbrná investiční mince Rok Tygra Lunar III 1 Oz 2022",
-		"availability": "Na objednávku",
-		"price": 102940,
-		"imgSrc": "/assets/img/product3.jpg",
-		"flags": ["Novinka"]
-	},
-	{
-		"category": "Doporučené",
-		"title": "Zlatá investiční mince American Eagle 1/2 Oz ND",
-		"availability": "Skladem",
-		"price": 43852,
-		"imgSrc": "/assets/img/product1.jpg",
-		"flags": ["Novinka", "Výprodej"]
-	},
-	{
-		"category": "Doporučené",
-		"title": "Stříbrná investiční mince Rok Tygra Lunar III 1 Oz 2022",
-		"availability": "Na objednávku",
-		"price": 102940,
-		"imgSrc": "/assets/img/product3.jpg",
-		"flags": ["Novinka"]
 	},
 	{
 		"category": "Doporučené",
@@ -357,23 +333,47 @@
 		"title": "Zlatá investiční mince American Eagle 1/2 Oz ND",
 		"availability": "Skladem",
 		"price": 43852,
-		"imgSrc": "/assets/img/product1.jpg",
+		"imgSrc": "/assets/img/produkt1.jpg",
 		"flags": ["Novinka", "Výprodej"]
 	},
 	{
-		"category": Doporučené,
+		"category": "Doporučené",
+		"title": "Stříbrná investiční mince Rok Tygra Lunar III 1 Oz 2022",
+		"availability": "Na objednávku",
+		"price": 102940,
+		"imgSrc": "/assets/img/product3.jpg",
+		"flags": ["Novinka"]
+	},
+	{
+		"category": "Doporučené",
+		"title": "Stříbrná investiční mince Rok Tygra Lunar III 1 Oz 2022",
+		"availability": "Na objednávku",
+		"price": 102940,
+		"imgSrc": "/assets/img/product3.jpg",
+		"flags": ["Novinka"]
+	},
+	{
+		"category": "Doporučené",
+		"title": "Zlatá investiční mince American Eagle 1/2 Oz ND",
+		"availability": "Skladem",
+		"price": 43852,
+		"imgSrc": "/assets/img/produkt1.jpg",
+		"flags": ["Novinka", "Výprodej"]
+	},
+	{
+		"category": "Doporučené",
 		"title": "500g investiční stříbrný slitek Heraeus",
 		"availability": "Skladem",
 		"price": 28465,
-		"imgSrc": "/assets/img/product2.jpg",
-		"flags": ["Tip", "Výprodej"]
-	}
+		"imgSrc": "/assets/img/produkt2.jpg",
+		"flags": ["Výprodej"]
+	},
 	{
 		"category": "Doporučené",
 		"title": "10 x 1g investiční zlatý slitek Argor Heraeus SA",
 		"availability": "Momentálně nedostupné",
 		"price": 65875,
-		"imgSrc": "/assets/img/product4.jpg",
+		"imgSrc": "/assets/img/produkt4.jpg",
 		"flags": []
 	},
 	{
@@ -381,7 +381,7 @@
 		"title": "500g investiční stříbrný slitek Heraeus",
 		"availability": "Skladem",
 		"price": 28465,
-		"imgSrc": "/assets/img/product2.jpg",
-		"flags": ["Tip", "Výprodej"]
+		"imgSrc": "/assets/img/produkt2.jpg",
+		"flags": ["Výprodej"]
 	}
 ]
